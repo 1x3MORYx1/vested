@@ -98,6 +98,7 @@ button:last-child:hover {
 }
 
 #search {
+	width: 50%;
 	position: absolute;
 	top: 200px;
 	margin-left: auto;
@@ -116,11 +117,15 @@ button:last-child:hover {
 	color: white;
 }
 
+.input-container {
+	width: 100%;
+}
+
 input[type="text"] {
 	width: 80%;
 	height: 35px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: auto;
+	margin-right: auto;
 	padding-left: 5px;
 	border-radius: 5px;
 	border: none;
@@ -137,7 +142,7 @@ input[type="text"] {
 	color: white;
 	top: 12px;
 	margin-top: -10px;
-	margin-left: -10%;
+	margin-left: -3%;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
