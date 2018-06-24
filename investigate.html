@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Version 0.1 of Vested website -->
+<html>
+<head>
+	<title>Vested: Friendlier Real Estate Investing</title>
+	<link href="css/styles.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<script src="OpenLayers/OpenLayers.js"></script>
+	<script>
+		function init() {
+        map = new OpenLayers.Map("map-container");
+        var mapnik         = new OpenLayers.Layer.OSM();
+        var fromProjection = new OpenLayers.Projection("EPSG:4326");
+        var toProjection   = new OpenLayers.Projection("EPSG:900913");
+        var position       = new OpenLayers.LonLat(-88.24, 40.12).transform( fromProjection, toProjection);
+        var zoom           = 13; 
+
+        map.addLayer(mapnik);
+        map.setCenter(position, zoom );
+      }
+	</script>
+</head>
+<body onload="init();">
+	<header>
+		<img class="logo" src="images/logo.png" title="Company Logo"/>
+			<div class="dropdown-menu">
+				<div class="dropdown">
+					<button class="dropbtn">dropdown 1</button>
+					<div id="dropdown1" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button type="button">dropdown 2</button>
+					<div id="dropdown1" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button type="button">dropdown 3</button>
+					<div id="dropdown1" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button type="button">dropdown 4</button>
+					<div id="dropdown1" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<div class="dropdown">
+					<button type="button">dropdown 5</button>
+					<div id="dropdown1" class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+					<button type="button" id="sign_in">Sign in</button>
+				</div>
+			</div>
+	</header>
+	<div class="dual-container">
+		<div id="map-container">
+		</div>
+		
+		<div class="info-container">
+		</div>
+	</div>
+</body>
+</html>

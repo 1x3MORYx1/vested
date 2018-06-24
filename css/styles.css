@@ -1,0 +1,206 @@
+header {
+	width: 1200px;
+	margin: 0px auto 10px auto;
+	height: 70px;
+	border-top: 2px solid black;
+}
+
+.logo {
+	height: 70px;
+	width: 200px;
+	float: left;
+}
+
+.dropdown-menu button {
+	width: 140px;
+	height: 50px;
+	border: none;
+	color: white;
+	float: left;
+	/*background-color: #4d79ff;*/
+	background: linear-gradient(to right, #ff944d, #ff854d);
+}
+
+.dropdown-menu button:hover {
+	background: #cc5200;
+}
+
+.dropdown-menu {
+	width: 900px;
+	float: right;
+	position: relative;
+	display: inline-block;
+}
+
+button:first-child {
+	border-bottom-left-radius: 7px;
+}
+
+button:nth-last-child(2) {
+	border-bottom-right-radius: 7px;
+}
+
+button:last-child {
+	width: 80px;
+	height: 30px;
+	margin: 10px 25px 10px 25px;
+	border: none;
+	color: white;
+	border-radius: 7px;
+	background: #3366ff;
+
+}
+
+button:last-child:hover {
+	background: #0039e6;
+}
+
+.dropbtn {
+	cursor: pointer;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 50px;
+	min-width: 160px;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1000;
+}
+
+.dropdown-content a {
+	display: block;
+	padding: 12px 16px;
+	text-decoration: none;
+	color: black;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+
+#search_container {
+	position: relative;
+
+}
+
+#search_container img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+#search {
+	position: absolute;
+	top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 25%;
+	right: 25%;
+	height: 75px;
+	text-align: center;
+}
+
+#search p {
+	text-align: center;
+	margin: 0px;
+	font-family: 'Shrikhand', cursive;
+	font-size: 20px;
+	color: white;
+}
+
+input[type="text"] {
+	width: 80%;
+	height: 35px;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-left: 5px;
+	border-radius: 5px;
+	border: none;
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	font-size: 15px;
+}
+
+/*input[type="image"] {*/
+#mag-glass {
+	position: relative;
+	width: 40px;
+	height: 17px;
+	background: #3366ff;
+	color: white;
+	top: 12px;
+	margin-top: -10px;
+	margin-left: -10%;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+.content {
+	display: flex;
+	width: 1200px;
+	text-align: center;
+	border: 1px solid blue;
+	margin: 150px auto 50px auto;
+}
+
+.articles {
+	flex: 25%;
+	height: 500px;
+	border: 1px solid black;
+	float: left;
+	margin: 0px 50px 0px 50px;
+}
+
+footer {
+	width: 600px;
+	margin: 0px auto 30px auto;
+	border: 1px solid black;
+	text-align: center;
+}
+
+footer a {
+	margin: 0px 20px 0px 20px;
+}
+
+.dual-container {
+	width: 90%;
+	height: 90vh;
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#map-container {
+	width: 49%;
+	height: 100%;
+	float: left;
+	border-top: auto;
+	border-bottom: auto;
+	border: 2px solid red;
+	z-index: 10;
+}
+
+#demoMap {
+	height: 250px;
+}
+
+.info-container {
+	width: 49%;
+	height: 100%;
+	float: right;
+	border: 2px solid blue;
+}
+
